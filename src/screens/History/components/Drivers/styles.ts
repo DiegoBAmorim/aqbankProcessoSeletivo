@@ -1,15 +1,14 @@
 import {StyleSheet} from 'react-native';
-import {Colors} from '../../constants/Colors';
+import {Colors} from '../../../../constants/Colors';
 
 export const styles = StyleSheet.create({
-  scrollView: {
-    flex: 1,
-    backgroundColor: Colors.WHITE,
-    paddingHorizontal: 20,
-  },
   container: {
-    // alignItems: 'center',
-    marginTop: 40,
+    marginTop: 42,
+  },
+  loading: {
+    height: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   card: {
     gap: 12,

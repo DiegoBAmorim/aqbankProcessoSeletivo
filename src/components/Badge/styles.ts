@@ -8,7 +8,6 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: 3,
-
     gap: 5,
   },
   text: {

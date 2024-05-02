@@ -13,6 +13,7 @@ export const Colors = {
   NEUTRO_50: '#FAFAF9',
   NEUTRO_100: '#F5F5F4',
   NEUTRO_200: '#E7E5E4',
+  NEUTRO_250: '#EDEDED',
   NEUTRO_300: '#D6D3D1',
   NEUTRO_350: '#D1D6CC',
   NEUTRO_400: '#A8A29E',
