@@ -56,7 +56,8 @@ export const LastRace: React.FC<Props> = ({results, driverResults}) => {
           style={{
             backgroundColor: Colors.NEUTRO_250,
             marginBottom: 10,
-            flexWrap: 'nowrap',
+            maxWidth: '70%',
+            justifyContent: 'space-evenly',
           }}
         />
 
