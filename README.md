@@ -43,24 +43,32 @@ O projeto foi desenvolvido usando React Native CLI para a plataforma **iOS**.
 O projeto possui a seguinte estrutura:
 
 - **/src**: Contém todos os arquivos de código-fonte, incluindo componentes, estilos e utilitários.
+
+  - **/@types**: Tipagens.
+  - **/assets**: Contém ícones de nacionalidades, fontes e outras imagens necessárias para o aplicativo.
   - **/components**: Componentes do aplicativo.
+  - **/constants**: Valores Constantes (imutáveis).
+  - **/routes**: Rotas do aplicativo.
   - **/screens**: Telas do aplicativo.
-  - **/styles**: Arquivos de estilo para o aplicativo.
-  - **/utils**: Funções utilitárias, incluindo a chamada de API.
+    - **/folderName**: Telas.
+    - **/components**: Componentes só usados na screen pai.
+  - **/services**: Funções de servicos, como httpClient usando axios.
+  - **/utils**: Funções utilitárias.
+
 - **/assets**: Contém ícones de nacionalidades, fontes e outras imagens necessárias para o aplicativo.
 
 ## Funcionalidades
 
 - Tela inicial com um botão na parte inferior que redireciona o usuário para a segunda tela.
 - Na segunda tela, uma chamada GET é feita para `http://ergast.com/api/f1/drivers.json` para obter dados dos pilotos.
+- **Próxima corrida**: Exibe informações sobre a próxima corrida usando dados da API do Ergast `https://ergast.com/api/f1/current/next.json`.
+- **Última corrida**: Exibe informações sobre a última corrida, incluindo o pódio, usando dados da API do Ergast `https://ergast.com/api/f1/current/last/results.json` .
 - Os dados obtidos são filtrados para mostrar apenas os pilotos nascidos a partir de 1º de janeiro de 1960.
-- Uma lista de pilotos é exibida usando uma `FlatList`, mostrando o nome (`givenName`) e o ícone de nacionalidade correspondente.
-- As fontes e tamanhos dos componentes foram configurados de forma dinâmica de acordo com o Design System do Figma.
+- Uma lista de pilotos é exibida usando uma `ScrollView`, mostrando o nome (`givenName`) e o ícone de nacionalidade correspondente.
 
-## Design System
+## Observações
 
-- O projeto segue as diretrizes de design apresentadas no Figma, incluindo tamanhos de componentes, fontes, cores e ícones de nacionalidades.
-- Para acessar o Design System, clique em "Design System" no Figma.
+- Como eu não tenho dev mode do Figma, tive problema para pegar alguns valores, podendo ter alguma diferença de layout.
 
 ## Contribuição
 
