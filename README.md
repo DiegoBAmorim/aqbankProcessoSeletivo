@@ -1,79 +1,75 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Desafio de Entrevista: Aplicativo React Native CLI para Visualizar Pilotos de F1
 
-# Getting Started
+Este é um projeto React Native CLI criado para um desafio de entrevista. O objetivo do desafio é criar um aplicativo que redirecione o usuário para uma segunda tela ao clicar em um botão na tela inicial. Nessa segunda tela, o aplicativo realiza uma chamada GET para a URL `http://ergast.com/api/f1/drivers.json`, disponibilizando uma lista dos nomes dos pilotos nascidos a partir de 1º de janeiro de 1960, juntamente com suas nacionalidades e os ícones correspondentes dos países.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Configuração
 
-## Step 1: Start the Metro Server
+O projeto foi desenvolvido usando React Native CLI para a plataforma **iOS**.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+### Requisitos
 
-To start Metro, run the following command from the _root_ of your React Native project:
+- [Node.js](https://nodejs.org/) (versão 16 ou superior)
+- [Yarn](https://yarnpkg.com/) ou [NPM](https://www.npmjs.com/)
+- [React Native CLI](https://reactnative.dev/docs/environment-setup) configurado para iOS.
 
-```bash
-# using npm
-npm start
+### Instalação
 
-# OR using Yarn
-yarn start
-```
+1. Clone este repositório para o seu computador:
 
-## Step 2: Start your Application
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   ```
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+2. Acesse o diretório do projeto:
 
-### For Android
+   ```bash
+   cd seu-repositorio
+   ```
 
-```bash
-# using npm
-npm run android
+3. Instale as dependências:
 
-# OR using Yarn
-yarn android
-```
+   ```bash
+   yarn install
+   ```
 
-### For iOS
+4. Execute o projeto:
 
-```bash
-# using npm
-npm run ios
+   ```bash
+   npx react-native run-ios
+   ```
 
-# OR using Yarn
-yarn ios
-```
+## Estrutura do Projeto
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+O projeto possui a seguinte estrutura:
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+- **/src**: Contém todos os arquivos de código-fonte, incluindo componentes, estilos e utilitários.
+  - **/components**: Componentes do aplicativo.
+  - **/screens**: Telas do aplicativo.
+  - **/styles**: Arquivos de estilo para o aplicativo.
+  - **/utils**: Funções utilitárias, incluindo a chamada de API.
+- **/assets**: Contém ícones de nacionalidades, fontes e outras imagens necessárias para o aplicativo.
 
-## Step 3: Modifying your App
+## Funcionalidades
 
-Now that you have successfully run the app, let's modify it.
+- Tela inicial com um botão na parte inferior que redireciona o usuário para a segunda tela.
+- Na segunda tela, uma chamada GET é feita para `http://ergast.com/api/f1/drivers.json` para obter dados dos pilotos.
+- Os dados obtidos são filtrados para mostrar apenas os pilotos nascidos a partir de 1º de janeiro de 1960.
+- Uma lista de pilotos é exibida usando uma `FlatList`, mostrando o nome (`givenName`) e o ícone de nacionalidade correspondente.
+- As fontes e tamanhos dos componentes foram configurados de forma dinâmica de acordo com o Design System do Figma.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+## Design System
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+- O projeto segue as diretrizes de design apresentadas no Figma, incluindo tamanhos de componentes, fontes, cores e ícones de nacionalidades.
+- Para acessar o Design System, clique em "Design System" no Figma.
 
-## Congratulations! :tada:
+## Contribuição
 
-You've successfully run and modified your React Native App. :partying_face:
+Se você quiser contribuir para este projeto, fique à vontade para abrir uma issue ou enviar um pull request.
 
-### Now what?
+## Licença
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+Este projeto é licenciado sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
 
-# Troubleshooting
+---
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Obrigado por revisar este projeto. Espero que atenda aos requisitos do desafio. Se precisar de mais informações ou esclarecimentos, por favor, sinta-se à vontade para entrar em contato.
