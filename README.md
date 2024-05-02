@@ -50,8 +50,6 @@ O projeto possui a seguinte estrutura:
   - **/constants**: Valores Constantes (imutáveis).
   - **/routes**: Rotas do aplicativo.
   - **/screens**: Telas do aplicativo.
-    - **/folderName**: Telas.
-    - **/components**: Componentes só usados na screen pai.
   - **/services**: Funções de servicos, como httpClient usando axios.
   - **/utils**: Funções utilitárias.
 
